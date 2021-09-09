@@ -8,4 +8,30 @@ h1 {
   text-shadow: chartreuse 2px 2px 2px;
 }
 
+section {
+  background-color: antiquewhite;
+  position: absolute;
+  width: 50%;
+  border: solid;
+  border-color: grey;
+}
+
+#projects {
+  top: 10%;
+}
+
+#skills {
+  top: 10%;
+  left: 50%;
+}
+
+#about {
+  top: 40%;
+}
+
+#contact {
+  top: 40%;
+  left: 50%;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -6,3 +6,33 @@ h1 {
     color:red;
     text-shadow: chartreuse 2px 2px 2px;
 }
+
+$section-width : 50%;
+$section-height: 30%;
+section {
+    background-color: antiquewhite;
+    position: absolute;
+    width: $section-width;
+    border: solid;
+    border-color: grey;
+}
+$begin: 10%;
+#projects{
+    top:$begin;
+}
+#skills{
+    top:$begin;
+    left:$section-width;
+
+}
+#about{
+    top:$begin + $section-height;
+    
+}
+#contact{
+    top:$begin + $section-height;
+    left:$section-width;
+
+
+
+}
