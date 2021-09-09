@@ -8,11 +8,12 @@ h1 {
 }
 
 $section-width : 50%;
-$section-height: 30%;
+$section-height: 40%;
 section {
     background-color: antiquewhite;
     position: absolute;
     width: $section-width;
+    height: $section-height;
     border: solid;
     border-color: grey;
 }
@@ -33,6 +34,18 @@ $begin: 10%;
     top:$begin + $section-height;
     left:$section-width;
 
+
+
+}
+
+$diameter: 40%;
+#circle-img{
+    width:$diameter;
+    height: $diameter;
+
+    left:$section-width - ($diameter / 2);
+    top:$begin + $section-height - ($diameter / 2);
+    border-radius: 180px;
 
 
 }
