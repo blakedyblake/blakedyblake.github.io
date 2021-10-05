@@ -1,21 +1,55 @@
 * {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #007cbe;
   color: white;
 }
 
 body {
-  background-color: #000000;
   text-align: center;
   color: white;
 }
 
-h3 {
-  font-size: 30;
+#main-page {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 #circle-img {
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   background-image: url("../../me.jpg");
+  margin-top: 230px;
+  margin-right: 200px;
+  margin-left: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#menu {
+  float: left;
+  margin-top: 200px;
+  flex-grow: 1;
+}
+
+.selection {
+  display: block;
+  margin: 10px;
+  height: 30px;
+  background-color: #6b7d7d;
+  border-radius: 10px;
+  border-color: antiquewhite;
+}
+
+.selection:hover {
+  transform: rotate(5deg);
+  background-color: beige;
+}
+
+p {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */
