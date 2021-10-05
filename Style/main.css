@@ -44,7 +44,8 @@ body {
 
 .selection:hover {
   transform: rotate(5deg);
-  background-color: beige;
+  background-color: blue;
+  transition-duration: 1s;
 }
 
 p {
