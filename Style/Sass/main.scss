@@ -10,7 +10,6 @@ body{
     
     text-align: center;
     color:white;
-    
 }
 #main-page{
     margin-top:0;
@@ -23,9 +22,9 @@ body{
     width: $profile-width;
     border-radius: 50%;
     background-image: url('../../me.jpg');
-    margin-top: 230px;
-    margin-right: 200px;
-    margin-left:30px;
+    margin-top: 20px;
+    margin-right: 400px;
+    margin-left:00px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,24 +32,121 @@ body{
 #menu{
     
     float: left;
-    margin-top: 200px;
+    margin-top: 70px;
     flex-grow: 1;
+    margin-left:400px;
+    margin-right:200px;
 }
 .selection{
     display: block;
     margin:10px;
     height:30px;
-    background-color: $Writing1;
+    
     border-radius: 10px;
     border-color: antiquewhite;
+
+    background: linear-gradient(to left, blue 50%, $Writing1 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .5s ease-out;
 }
 .selection:hover{
-    transform: rotate(5deg);
-    background-color: blue;
+    transform: rotate(-5deg);
+    background-position: right bottom;
     transition-duration: 1s;  
 }
 p{
     background-color: rgba($color: #000000, $alpha: 0.0);
     padding: 4px;
 }
+a{
+    text-decoration: none;
+}
 
+.skills{
+    div{
+        background-color:black;
+    }
+    
+}
+a{
+    background-color: rgba(black, 0);
+    img{
+        background-color: rgba(black, 0);
+        height:42px;
+        width: auto;
+    }
+}
+
+.info{
+    margin-top: 20px;
+    margin-left:30%;
+    width:40%;
+    padding:20px;
+    display: block;
+    background-color: $Writing2;
+    border-radius: 50% / 10%;
+    border: white solid 2px;
+}
+h1,h2,h3,h4{
+    background-color: rgba($color: black, $alpha: 0.0);
+}
+.about{
+    float:none;
+    width: 250px;
+    height: 250px;
+    margin-right:0px;
+}
+.info-column{
+    margin-right: 0px;
+    margin-left:0px;
+    .info{
+        margin-left: 0px;
+    }
+}
+#menu.contact{
+    margin-left: 30%;
+}
+.info.contact{
+    width:20%;
+    margin-left:0px;
+    margin-right:20%;
+    
+}
+.animations{
+    padding:20px;
+    display: block;
+    width:40%;
+    background-color: black;
+    border-radius: 10% / 50%;
+    img{
+        width:10%;
+        background-color:rgba(black, 0);
+        margin:12px;
+    }
+    img:hover{
+        transform: scale(1.2);
+        transition: linear;
+        transition-duration: 1s;
+    }
+}
+#react-icon{
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+i{
+    height:60px;
+    width:100px
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

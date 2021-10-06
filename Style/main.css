@@ -19,9 +19,9 @@ body {
   width: 300px;
   border-radius: 50%;
   background-image: url("../../me.jpg");
-  margin-top: 230px;
-  margin-right: 200px;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 400px;
+  margin-left: 0px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,28 +29,129 @@ body {
 
 #menu {
   float: left;
-  margin-top: 200px;
+  margin-top: 70px;
   flex-grow: 1;
+  margin-left: 400px;
+  margin-right: 200px;
 }
 
 .selection {
   display: block;
   margin: 10px;
   height: 30px;
-  background-color: #6b7d7d;
   border-radius: 10px;
   border-color: antiquewhite;
+  background: linear-gradient(to left, blue 50%, #6b7d7d 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.5s ease-out;
 }
 
 .selection:hover {
-  transform: rotate(5deg);
-  background-color: blue;
+  transform: rotate(-5deg);
+  background-position: right bottom;
   transition-duration: 1s;
 }
 
 p {
   background-color: rgba(0, 0, 0, 0);
   padding: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.skills div {
+  background-color: black;
+}
+
+a {
+  background-color: rgba(0, 0, 0, 0);
+}
+a img {
+  background-color: rgba(0, 0, 0, 0);
+  height: 42px;
+  width: auto;
+}
+
+.info {
+  margin-top: 20px;
+  margin-left: 30%;
+  width: 40%;
+  padding: 20px;
+  display: block;
+  background-color: #6d696a;
+  border-radius: 50%/10%;
+  border: white solid 2px;
+}
+
+h1, h2, h3, h4 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.about {
+  float: none;
+  width: 250px;
+  height: 250px;
+  margin-right: 0px;
+}
+
+.info-column {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.info-column .info {
+  margin-left: 0px;
+}
+
+#menu.contact {
+  margin-left: 30%;
+}
+
+.info.contact {
+  width: 20%;
+  margin-left: 0px;
+  margin-right: 20%;
+}
+
+.animations {
+  padding: 20px;
+  display: block;
+  width: 40%;
+  background-color: black;
+  border-radius: 10%/50%;
+}
+.animations img {
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 12px;
+}
+.animations img:hover {
+  transform: scale(1.2);
+  transition: linear;
+  transition-duration: 1s;
+}
+
+#react-icon {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+i {
+  height: 60px;
+  width: 100px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
