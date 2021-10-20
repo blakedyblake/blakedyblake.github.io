@@ -1,0 +1,66 @@
+@import 'variables';
+@media only screen and (max-width:1280px){
+    #circle-img{
+        right:10%
+    }
+
+    #menu{
+        left:20%
+    }
+    .info-column{
+        left:600px
+    }
+    .info.contact{
+        right:20%;
+    }
+}
+
+@media only screen and(max-width:800px){
+    #menu{
+       left:34%;
+       width:30%;
+    }
+    #menu.contact{
+        left:5%;
+    }
+    #circle-img{
+        right:26%;
+        width:48%;
+        top:400px
+      
+    }
+    .animations{
+        position:absolute;
+        top:400px;
+        left:20%;
+        width:60%;
+        margin-left:0;
+        img:hover{
+            transform:scale(1.7);
+            transition: linear;
+            transition-duration: 1s;
+        }
+    }
+    .info.contact{
+        right:1%;
+        width:150px
+        
+    }
+    .info{
+        margin-top:600px
+    }
+    
+    .info.skills{
+        margin-top: 600px;
+    }
+    .info-column{
+        top:500px;
+        left:35%
+    }
+    
+    
+
+}
+@media only screen and(max-width:400px){
+
+}
